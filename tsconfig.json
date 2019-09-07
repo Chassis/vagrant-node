@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"lib": [ "es6" ],
+		"strict": true,
+		"moduleResolution": "node",
+		"types": [ "node" ],
+		"esModuleInterop": true
+	},
+	"files": [
+		"parser.ts"
+	]
+}
