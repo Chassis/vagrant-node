@@ -9,6 +9,7 @@
 		"esModuleInterop": true
 	},
 	"files": [
+		"commands.ts",
 		"parser.ts"
 	]
 }
