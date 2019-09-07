@@ -11,6 +11,7 @@ enum Status {
 	Loading = 'loading',
 	Launching = 'launching',
 	Halting = 'halting',
+	Aborted = 'aborted',
 };
 
 export function getStatus( path: string ) : Promise<Status> {
