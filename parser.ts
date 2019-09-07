@@ -13,11 +13,8 @@ export function parseMachineReadable( text: string ) : MachineReadableItem[] {
 	const lines = text.trim().split('\n');
 	return lines
 		.map( ( line: string ) => line.split( ',' ) )
+		.filter( pieces => pieces.length >= 3 )
 		.map( ( pieces: string[] ) : MachineReadableItem => {
-			if ( pieces.length < 3 ) {
-				throw new Error('Invalid machine-readable, minimum number of pieces is 3');
-			}
-
 			const [ timestamp, target, type, ...data ] = pieces;
 
 			return {
