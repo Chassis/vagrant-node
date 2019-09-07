@@ -1,11 +1,20 @@
-const { spawn } = require( 'child_process' );
+import { spawn } from 'child_process';
 
-const {
+import {
 	parseGlobalStatus,
 	parseMachineReadable,
-} = require( './parser' );
+} from './parser';
 
-function getStatus( path ) {
+enum Status {
+	PowerOff = 'poweroff',
+	Running = 'running',
+	Loading = 'loading',
+	Launching = 'launching',
+	Halting = 'halting',
+	Aborted = 'aborted',
+};
+
+export function getStatus( path: string ) : Promise<Status> {
 	return new Promise( ( resolve, reject ) => {
 		const process = spawn(
 			'vagrant',
@@ -33,14 +42,22 @@ function getStatus( path ) {
 
 			const parsed = parseMachineReadable( stdout );
 			const stateItem = parsed.find( item => item.type === 'state' );
-			const state = stateItem.data[0];
+			if ( ! stateItem ) {
+				reject( {
+					error: 'invalid_output',
+					stdout,
+					stderr,
+				} );
+				return;
+			}
 
-			resolve( state );
+			const state = stateItem.data[0];
+			resolve( state as Status );
 		} );
 	} );
 }
 
-function getAllMachines() {
+export function getAllMachines() : Promise<string[]> {
 	return new Promise( resolve => {
 		const process = spawn(
 			'vagrant',
@@ -56,8 +73,3 @@ function getAllMachines() {
 		} );
 	} );
 }
-
-module.exports = {
-	getAllMachines,
-	getStatus,
-};
