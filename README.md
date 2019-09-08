@@ -5,10 +5,11 @@ Node helpers for interacting with Vagrant.
 ## Installation
 
 Vagrant Node is available on npm, simply add it to your project to get started:
+
 ```
 npm i @chassis-wp/vagrant-node
- 
-# Or, if you're using Yarn 
+
+# Or, if you're using Yarn
 yarn add @chassis-wp/vagrant-node
 ```
 
