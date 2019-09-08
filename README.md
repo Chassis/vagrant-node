@@ -7,11 +7,11 @@ Node helpers for interacting with Vagrant.
 1. `git clone https://github.com/Chassis/vagrant-node.git <your-project>`.
 2. `cd <your-project>`.
 3. `npm install`.
-4. `npm watch`.
+4. `npm run watch`.
 
 ## Build
 
-1. `npm build`.
+1. `npm run build`.
 
 ## Licence
 This code is licensed under the MIT license.
