@@ -17,7 +17,7 @@ yarn add @chassis-wp/vagrant-node
 
 The public API of Vagrant Node is available via `require( 'vagrant-node' )`.
 
-```
+```js
 const vagrant = require( 'vagrant-node' );
 
 const allMachines = await vagrant.getAllMachines();
