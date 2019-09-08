@@ -1,6 +1,7 @@
 {
 	"name": "@chassis/vagrant-node",
 	"version": "0.1.0",
+	"description": "Node helpers for interacting with Vagrant.",
 	"license" : "MIT",
 	"contributors": [
 		"Ryan McCue <me@ryanmccue.info> (https://rmccue.io/)",
@@ -18,5 +19,9 @@
 	"scripts": {
 		"build": "tsc",
 		"watch": "tsc -w"
-	}
+	},
+	"keywords": [
+		"vagrant",
+		"chassis"
+	]
 }
