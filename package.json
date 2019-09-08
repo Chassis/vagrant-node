@@ -1,5 +1,5 @@
 {
-	"name": "@chassis/vagrant-node",
+	"name": "@chassis-wp/vagrant-node",
 	"version": "0.1.0",
 	"description": "Node helpers for interacting with Vagrant.",
 	"license" : "MIT",
