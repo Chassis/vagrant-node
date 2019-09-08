@@ -1,6 +1,16 @@
 {
-	"name": "vagrant-node",
+	"name": "@chassis-wp/vagrant-node",
 	"version": "0.1.0",
+	"description": "Node helpers for interacting with Vagrant.",
+	"license" : "MIT",
+	"contributors": [
+		"Ryan McCue <me@ryanmccue.info> (https://rmccue.io/)",
+		"Bronson Quick <bronson@bronsonquick.com.au> (https://www.bronsonquick.com.au/)"
+	],
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/Chassis/vagrant-node.git"
+	},
 	"devDependencies": {
 		"@types/node": "^12.7.4",
 		"typescript": "^3.6.2"
@@ -9,5 +19,9 @@
 	"scripts": {
 		"build": "tsc",
 		"watch": "tsc -w"
-	}
+	},
+	"keywords": [
+		"vagrant",
+		"chassis"
+	]
 }
