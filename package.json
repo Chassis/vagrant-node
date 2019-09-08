@@ -2,6 +2,10 @@
 	"name": "@chassis/vagrant-node",
 	"version": "0.1.0",
 	"license" : "MIT",
+	"contributors": [
+		"Ryan McCue <me@ryanmccue.info> (https://rmccue.io/)",
+		"Bronson Quick <bronson@bronsonquick.com.au> (https://www.bronsonquick.com.au/)"
+	],
 	"repository": {
 		"type" : "git",
 		"url" : "https://github.com/Chassis/vagrant-node.git"
