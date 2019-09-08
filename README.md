@@ -4,6 +4,26 @@ Node helpers for interacting with Vagrant.
 
 ## Installation
 
+Vagrant Node is available on npm, simply add it to your project to get started:
+```
+npm i @chassis-wp/vagrant-node
+ 
+# Or, if you're using Yarn 
+yarn add @chassis-wp/vagrant-node
+```
+
+## Usage
+
+```
+const vagrant = require('vagrant-node');
+
+const allMachines = vagrant.getAllMachines();
+
+const getMachineStatus = vagrant.getStatus( '~/Projects/chassis' );
+```
+
+## Installation For Development
+
 1. `git clone https://github.com/Chassis/vagrant-node.git <your-project>`.
 2. `cd <your-project>`.
 3. `npm install`.
