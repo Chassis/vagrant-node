@@ -26,12 +26,12 @@ const getMachineStatus = vagrant.getStatus( '~/Projects/chassis' );
 
 1. `git clone https://github.com/Chassis/vagrant-node.git <your-project>`.
 2. `cd <your-project>`.
-3. `npm install`.
-4. `npm run watch`.
+3. `npm install` or `yarn install`.
+4. `npm run watch` or `yarn watch`.
 
 ## Build
 
-1. `npm run build`.
+1. `npm run build` or `yarn build`.
 
 ## Licence
 This code is licensed under the MIT license.
