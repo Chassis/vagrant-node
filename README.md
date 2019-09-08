@@ -31,11 +31,20 @@ const getMachineStatus = await vagrant.getStatus( '~/Projects/chassis' );
 3. `npm install` or `yarn install`.
 4. `npm run watch` or `yarn watch`.
 
+A demo Node application is available in the `example/` directory. To run it:
+
+1. `cd example`
+2. `npm install` or `yarn install`
+3. `node index.js` and subcommands thereof.
+
+
 ## Build
 
 1. `npm run build` or `yarn build`.
 
+
 ## Licence
+
 This code is licensed under the MIT license.
 
 Copyright (c) 2019-present Ryan McCue, Bronson Quick
