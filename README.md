@@ -15,12 +15,13 @@ yarn add @chassis-wp/vagrant-node
 
 ## Usage
 
+The public API of Vagrant Node is available via `require( 'vagrant-node' )`.
+
 ```
-const vagrant = require('vagrant-node');
+const vagrant = require( 'vagrant-node' );
 
-const allMachines = vagrant.getAllMachines();
-
-const getMachineStatus = vagrant.getStatus( '~/Projects/chassis' );
+const allMachines = await vagrant.getAllMachines();
+const getMachineStatus = await vagrant.getStatus( '~/Projects/chassis' );
 ```
 
 ## Installation For Development
